@@ -27,7 +27,7 @@ export class TestData {
         priority: TestData.priorities[2],
         completed: false,
         category: TestData.categories[0],
-        date: new Date(value: '2024-02-06')
+        date: new Date('2024-02-06')
     },
 
 
@@ -37,7 +37,7 @@ export class TestData {
         priority: TestData.priorities[0],
         completed: false,
         category: TestData.categories[0],
-        date: new Date(value: '2024-09-06')
+        date: new Date('2024-09-06')
     },
    
     { 
@@ -46,7 +46,7 @@ export class TestData {
         priority: TestData.priorities[2],
         completed: true,
         category: TestData.categories[1],
-        date: new Date(value: '2024-02-11')
+        date: new Date('2024-02-11')
     },
 
 
@@ -56,7 +56,7 @@ export class TestData {
         priority: TestData.priorities[2],
         completed: false,
         category: TestData.categories[3],
-        date: new Date(value: '2024-12-06')
+        date: new Date('2024-12-06')
     },
     { 
         id: 5,
@@ -64,7 +64,7 @@ export class TestData {
         priority: TestData.priorities[2],
         completed: false,
         category: TestData.categories[4],
-        date: new Date(value: '2024-03-06')
+        date: new Date('2024-03-06')
     },
 
 
@@ -74,7 +74,7 @@ export class TestData {
         priority: TestData.priorities[2],
         completed: false,
         category: TestData.categories[3],
-        date: new Date(value: '2024-12-11')
+        date: new Date('2024-12-11')
     },
    
     { 
@@ -83,7 +83,7 @@ export class TestData {
         priority: TestData.priorities[2],
         completed: false,
         category: TestData.categories[6],
-        date: new Date(value: '2024-05-06')
+        date: new Date('2024-05-06')
     }
    
     ];
