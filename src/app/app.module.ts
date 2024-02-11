@@ -5,6 +5,10 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CategoriesComponent } from './views/categories/categories.component';
 import { TasksComponent } from './views/tasks/tasks.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+
+
+
 
 @NgModule({
   declarations: [
@@ -14,9 +18,12 @@ import { TasksComponent } from './views/tasks/tasks.component';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
