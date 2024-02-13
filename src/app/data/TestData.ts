@@ -75,16 +75,6 @@ export class TestData {
         completed: false,
         category: TestData.categories[3],
         date: new Date('2024-12-11')
-    },
-   
-    { 
-        id: 6,
-        title: 'drive alot',
-        priority: TestData.priorities[2],
-        completed: false,
-        category: TestData.categories[6],
-        date: new Date('2024-05-06')
-    }
-   
+    } 
     ];
 }

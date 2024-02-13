@@ -11,6 +11,8 @@ export class CategoriesComponent implements OnInit {
 
   categories: Category[]=[];
   selectedCategory: Category| null = null;
+  hoverCategory: Category| null = null;
+
 
   constructor(private dataHandler: DataHandlerService) {     
     }

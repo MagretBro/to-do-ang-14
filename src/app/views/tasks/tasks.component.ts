@@ -13,7 +13,10 @@ export class TasksComponent implements OnInit {
 
   ngOnInit(): void {
     this.dataHandler.taskSubject.subscribe(tasks=>this.tasks=tasks); 
+  }
 
+  toggleCompleted(task: Task): void {
+    task.completed = !task.completed;
   }
 
 }
