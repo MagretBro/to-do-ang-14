@@ -4,7 +4,7 @@
       <table class="table align-items-center mb-0">
         <thead>
           <tr>
-            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">ID</th>
+            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">#</th>
             <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Title</th>
             <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Completed</th>
             <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Priority</th>
@@ -14,13 +14,14 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let task of tasks">
-            <td>{{task.id}} </td>
+          <tr *ngFor="let task of tasks; let i =index">
+            <td>{{i+1}} </td>
             <td>{{task.title}} </td>
+            <td>{{task.category ? task.category.title: 'Without category'}} </td>
+            <td>{{task.priority ? task.priority.title: 'Without priority'}} </td>
+            <td>{{task.date ? (task.date | date) : 'Without date'}} </td>
             <td>{{task.completed}} </td>
-            <td> 1 {{task.priority}} </td>
-            <td> 2 {{task.category}} </td>
-            <td>{{task.date}} </td>
+
 
           </tr>
         </tbody>
